@@ -7,7 +7,7 @@
 #include <QLabel>
 #include <QString>
 
-class BattleShip : public QMainWindow
+class battleShip : public QMainWindow
 {
     Q_OBJECT
 private:
@@ -22,7 +22,7 @@ private:
     void setupUi();
 
 public:
-    BattleShip(QWidget* parent = nullptr);
+    battleShip(QWidget* parent = nullptr);
     //print();
 
 private slots:
