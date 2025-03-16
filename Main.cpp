@@ -1,4 +1,4 @@
-#include "btlshp.h"
+#include "BattleShip.h"
 
 #include <QApplication>
 
