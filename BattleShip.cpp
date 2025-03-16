@@ -1,15 +1,15 @@
-#include "BattleShip.h"
+#include "battleShip.h"
 
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QMessageBox>
 
-btlshp::btlshp(QWidget* parent) : QMainWindow(parent)
+battleShip::battleShip(QWidget* parent) : QMainWindow(parent)
 {
     setupUi();
 }
 
-void btlshp::setupUi()
+void battleShip::setupUi()
 {
     //initialize the setup of the widget
     QWidget* w = new QWidget();
@@ -68,12 +68,12 @@ void btlshp::setupUi()
 //this function takes care of all the action, and once a square is clicked it checks if it contains a 1 or a 0. From there it
 //keeps track of what was already attacked, handles decrementing the moves left counter, and also changes the colors of the squares attacked based on
 //if they contained a ship or not. Squares that contain water turn blue while ones containing the ship turn red.
-void btlshp::onAttackButtonClicked()
+void battleShip::onAttackButtonClicked()
 {
     int i = table->currentRow();
     int j = table->currentColumn();
     if(move <= 0)
-        QMessageBox::warning(this, "you suck", "Game over, oopsies :(");
+        QMessageBox::warning(this, "Too bad", "Game over, oopsies :(");
     if(matrix[i][j] == 0){
         table->setItem(i, j, new QTableWidgetItem("o"));
         matrix[i][j] = -1;
@@ -96,7 +96,7 @@ void btlshp::onAttackButtonClicked()
 
 }
 
-void btlshp::updateCount()
+void battleShip::updateCount()
 {
     a->setText(QString::number(move));
 }
