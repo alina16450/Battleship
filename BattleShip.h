@@ -1,5 +1,5 @@
-#ifndef BTLSHP_H
-#define BTLSHP_H
+#ifndef BATTLESHIP_H
+#define BATTLESHIP_H
 
 #include <QTableWidget>
 #include <QPushButton>
@@ -22,7 +22,7 @@ private:
     void setupUi();
 
 public:
-    btlshp(QWidget* parent = nullptr);
+    BattleShip(QWidget* parent = nullptr);
     //print();
 
 private slots:
@@ -31,4 +31,4 @@ private slots:
 };
 
 
-#endif // BTLSHP_H
+#endif // BATTLESHIP_H
