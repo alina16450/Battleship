@@ -6,7 +6,7 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    btlshp b;
+    BattleShip b;
     b.show();
     return a.exec();
 }
