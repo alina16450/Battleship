@@ -7,7 +7,7 @@
 #include <QLabel>
 #include <QString>
 
-class btlshp : public QMainWindow
+class BattleShip : public QMainWindow
 {
     Q_OBJECT
 private:
